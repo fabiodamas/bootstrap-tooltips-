@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <style> 
+      .tooltip-inner {
+          text-align: left;
+      }    
+    </style>  
+  </head>
+  <body>
+
+     </style>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="exampleInputTipoProntuario">Cód. Tipo de Prontuário  <span style="color:red">* </span>
+          <a href="#" data-toggle="tooltip" title="Insira o código do tipo de prontuário desejado ou 0 para todos os tipos de prontuário"
+            >?</a
+          ></label>
+          <input type="number" min=0 class="form-control" id="exampleInputTipoProntuario" aria-describedby="emailHelp" placeholder="">
+        </div>
+        <div class="col">
+          <label for="exampleInputTipoDocumental">Cód. Tipo Documental  <span style="color:red">* </span>
+            <a href="#" data-toggle="tooltip" title="Insira o código do Tipo Documental desejado ou 0 para todos os tipos documentais"
+              >?</a
+            ></label>
+            <input type="number"  min=0  class="form-control" id="exampleInputTipoDocumental" aria-describedby="emailHelp" placeholder="">
+        </div>
+        <div class="col">
+          <label for="nivel">Nível<span style="color:red">* </span>
+            <a href="#" style="white-space:nowrap"     data-toggle="tooltip" data-html="true" title="
+            Define o nível das operações permitidas:
+            <br><br>
+            delete = Apagar, criar, atualizar e visualizar.
+            <br><br>
+            update = Criar, atualizar e visualizar.
+            <br><br>
+            View = Visualizar.
+"
+              >?</a
+            ></label>
+            <br/>
+            <br/>
+            <select class="selectpicker"  class="form-control" >
+              <option>delete</option>
+              <option>update</option>
+              <option>view</option>
+            </select>
+            
+        </div>
+
+       
+      </div>
+
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
